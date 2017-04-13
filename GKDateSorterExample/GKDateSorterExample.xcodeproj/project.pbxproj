@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76632D451E9F7BB5000294AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76632D441E9F7BB5000294AF /* main.m */; };
+		76632D481E9F7BB5000294AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76632D471E9F7BB5000294AF /* AppDelegate.m */; };
+		76632D4B1E9F7BB5000294AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76632D4A1E9F7BB5000294AF /* ViewController.m */; };
+		76632D4E1E9F7BB5000294AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76632D4C1E9F7BB5000294AF /* Main.storyboard */; };
+		76632D501E9F7BB5000294AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76632D4F1E9F7BB5000294AF /* Assets.xcassets */; };
+		76632D531E9F7BB5000294AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76632D511E9F7BB5000294AF /* LaunchScreen.storyboard */; };
+		76632D5E1E9F7BB5000294AF /* GKDateSorterExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76632D5D1E9F7BB5000294AF /* GKDateSorterExampleTests.m */; };
+		76632D6B1E9FCD88000294AF /* GKDateSorter.m in Sources */ = {isa = PBXBuildFile; fileRef = 76632D6A1E9FCD88000294AF /* GKDateSorter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76632D5A1E9F7BB5000294AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76632D381E9F7BB5000294AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76632D3F1E9F7BB5000294AF;
+			remoteInfo = GKDateSorterExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76632D401E9F7BB5000294AF /* GKDateSorterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKDateSorterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76632D441E9F7BB5000294AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		76632D461E9F7BB5000294AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		76632D471E9F7BB5000294AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		76632D491E9F7BB5000294AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		76632D4A1E9F7BB5000294AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		76632D4D1E9F7BB5000294AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76632D4F1E9F7BB5000294AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76632D521E9F7BB5000294AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76632D541E9F7BB5000294AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76632D591E9F7BB5000294AF /* GKDateSorterExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKDateSorterExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76632D5D1E9F7BB5000294AF /* GKDateSorterExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKDateSorterExampleTests.m; sourceTree = "<group>"; };
+		76632D5F1E9F7BB5000294AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76632D691E9FCD88000294AF /* GKDateSorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDateSorter.h; sourceTree = "<group>"; };
+		76632D6A1E9FCD88000294AF /* GKDateSorter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDateSorter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76632D3D1E9F7BB5000294AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76632D561E9F7BB5000294AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76632D371E9F7BB5000294AF = {
+			isa = PBXGroup;
+			children = (
+				76632D421E9F7BB5000294AF /* GKDateSorterExample */,
+				76632D5C1E9F7BB5000294AF /* GKDateSorterExampleTests */,
+				76632D411E9F7BB5000294AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76632D411E9F7BB5000294AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76632D401E9F7BB5000294AF /* GKDateSorterExample.app */,
+				76632D591E9F7BB5000294AF /* GKDateSorterExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76632D421E9F7BB5000294AF /* GKDateSorterExample */ = {
+			isa = PBXGroup;
+			children = (
+				76632D681E9F7DAB000294AF /* GKDateSorter */,
+				76632D461E9F7BB5000294AF /* AppDelegate.h */,
+				76632D471E9F7BB5000294AF /* AppDelegate.m */,
+				76632D491E9F7BB5000294AF /* ViewController.h */,
+				76632D4A1E9F7BB5000294AF /* ViewController.m */,
+				76632D4C1E9F7BB5000294AF /* Main.storyboard */,
+				76632D4F1E9F7BB5000294AF /* Assets.xcassets */,
+				76632D511E9F7BB5000294AF /* LaunchScreen.storyboard */,
+				76632D541E9F7BB5000294AF /* Info.plist */,
+				76632D431E9F7BB5000294AF /* Supporting Files */,
+			);
+			path = GKDateSorterExample;
+			sourceTree = "<group>";
+		};
+		76632D431E9F7BB5000294AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76632D441E9F7BB5000294AF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76632D5C1E9F7BB5000294AF /* GKDateSorterExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				76632D5D1E9F7BB5000294AF /* GKDateSorterExampleTests.m */,
+				76632D5F1E9F7BB5000294AF /* Info.plist */,
+			);
+			path = GKDateSorterExampleTests;
+			sourceTree = "<group>";
+		};
+		76632D681E9F7DAB000294AF /* GKDateSorter */ = {
+			isa = PBXGroup;
+			children = (
+				76632D691E9FCD88000294AF /* GKDateSorter.h */,
+				76632D6A1E9FCD88000294AF /* GKDateSorter.m */,
+			);
+			path = GKDateSorter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76632D3F1E9F7BB5000294AF /* GKDateSorterExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76632D621E9F7BB5000294AF /* Build configuration list for PBXNativeTarget "GKDateSorterExample" */;
+			buildPhases = (
+				76632D3C1E9F7BB5000294AF /* Sources */,
+				76632D3D1E9F7BB5000294AF /* Frameworks */,
+				76632D3E1E9F7BB5000294AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GKDateSorterExample;
+			productName = GKDateSorterExample;
+			productReference = 76632D401E9F7BB5000294AF /* GKDateSorterExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76632D581E9F7BB5000294AF /* GKDateSorterExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76632D651E9F7BB5000294AF /* Build configuration list for PBXNativeTarget "GKDateSorterExampleTests" */;
+			buildPhases = (
+				76632D551E9F7BB5000294AF /* Sources */,
+				76632D561E9F7BB5000294AF /* Frameworks */,
+				76632D571E9F7BB5000294AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76632D5B1E9F7BB5000294AF /* PBXTargetDependency */,
+			);
+			name = GKDateSorterExampleTests;
+			productName = GKDateSorterExampleTests;
+			productReference = 76632D591E9F7BB5000294AF /* GKDateSorterExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76632D381E9F7BB5000294AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = GaoXueKai;
+				TargetAttributes = {
+					76632D3F1E9F7BB5000294AF = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = G937UL7723;
+						ProvisioningStyle = Automatic;
+					};
+					76632D581E9F7BB5000294AF = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = G937UL7723;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 76632D3F1E9F7BB5000294AF;
+					};
+				};
+			};
+			buildConfigurationList = 76632D3B1E9F7BB5000294AF /* Build configuration list for PBXProject "GKDateSorterExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76632D371E9F7BB5000294AF;
+			productRefGroup = 76632D411E9F7BB5000294AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76632D3F1E9F7BB5000294AF /* GKDateSorterExample */,
+				76632D581E9F7BB5000294AF /* GKDateSorterExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76632D3E1E9F7BB5000294AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76632D531E9F7BB5000294AF /* LaunchScreen.storyboard in Resources */,
+				76632D501E9F7BB5000294AF /* Assets.xcassets in Resources */,
+				76632D4E1E9F7BB5000294AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76632D571E9F7BB5000294AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76632D3C1E9F7BB5000294AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76632D6B1E9FCD88000294AF /* GKDateSorter.m in Sources */,
+				76632D4B1E9F7BB5000294AF /* ViewController.m in Sources */,
+				76632D481E9F7BB5000294AF /* AppDelegate.m in Sources */,
+				76632D451E9F7BB5000294AF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76632D551E9F7BB5000294AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76632D5E1E9F7BB5000294AF /* GKDateSorterExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76632D5B1E9F7BB5000294AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76632D3F1E9F7BB5000294AF /* GKDateSorterExample */;
+			targetProxy = 76632D5A1E9F7BB5000294AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76632D4C1E9F7BB5000294AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76632D4D1E9F7BB5000294AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76632D511E9F7BB5000294AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76632D521E9F7BB5000294AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76632D601E9F7BB5000294AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76632D611E9F7BB5000294AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76632D631E9F7BB5000294AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G937UL7723;
+				INFOPLIST_FILE = GKDateSorterExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.Keacher.GKDateSorterExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		76632D641E9F7BB5000294AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G937UL7723;
+				INFOPLIST_FILE = GKDateSorterExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.Keacher.GKDateSorterExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		76632D661E9F7BB5000294AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G937UL7723;
+				INFOPLIST_FILE = GKDateSorterExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.Keacher.GKDateSorterExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKDateSorterExample.app/GKDateSorterExample";
+			};
+			name = Debug;
+		};
+		76632D671E9F7BB5000294AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G937UL7723;
+				INFOPLIST_FILE = GKDateSorterExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.Keacher.GKDateSorterExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKDateSorterExample.app/GKDateSorterExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76632D3B1E9F7BB5000294AF /* Build configuration list for PBXProject "GKDateSorterExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76632D601E9F7BB5000294AF /* Debug */,
+				76632D611E9F7BB5000294AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76632D621E9F7BB5000294AF /* Build configuration list for PBXNativeTarget "GKDateSorterExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76632D631E9F7BB5000294AF /* Debug */,
+				76632D641E9F7BB5000294AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76632D651E9F7BB5000294AF /* Build configuration list for PBXNativeTarget "GKDateSorterExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76632D661E9F7BB5000294AF /* Debug */,
+				76632D671E9F7BB5000294AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76632D381E9F7BB5000294AF /* Project object */;
+}
