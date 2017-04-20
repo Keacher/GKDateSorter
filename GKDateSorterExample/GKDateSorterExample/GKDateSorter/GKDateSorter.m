@@ -235,32 +235,31 @@ static NSString *DefultDataFormat = @"yyyy/MM/dd HH:mm:ss";
 #pragma mark - helper method
 
 - (NSDate *)dateFromDateString:(NSString *)dateString {
-    //    [self.dateFormatter setDateFormat:@"yyyy/MM/dd HH:mm:ss"];
-    //    NSDate *date = [self.dateFormatter dateFromString:dateString];
-    //    return date;
+
     return [self dateFromDateString:dateString dateFormat:DefultDataFormat];
 }
 
 - (NSString *)dateStringFromDate:(NSDate *)date {
-    //    [self.dateFormatter setDateFormat:@"yyyy/MM/dd HH:mm:ss"];
-    //    NSString *dateString = [self.dateFormatter stringFromDate:date];
-    //    return dateString;
+
     return [self dateStringFromDate:date dateFormat:DefultDataFormat];
 }
 
 - (NSDate *)dateFromDateString:(NSString *)dateString dateFormat:(NSString *)dateFormat {
+    
     [self.dateFormatter setDateFormat:dateFormat];
     NSDate *date = [self.dateFormatter dateFromString:dateString];
     return date;
 }
 
 - (NSString *)dateStringFromDate:(NSDate *)date dateFormat:(NSString *)dateFormat {
+    
     [self.dateFormatter setDateFormat:dateFormat];
     NSString *dateString = [self.dateFormatter stringFromDate:date];
     return dateString;
 }
-//-----------------------------------
+
 - (NSString *)stringFormDateWithDateFormat:(NSString *)dateFormat {
+    
     if (!self.currentDate) {
         return @"";
     }
@@ -271,25 +270,4 @@ static NSString *DefultDataFormat = @"yyyy/MM/dd HH:mm:ss";
 
 @end
 
-@implementation GKDateSorter (HBDateSorter)
-
-- (NSString *)getSelectionDateStringCurrentDay {
-    return [self stringFormDateWithDateFormat:@"yyyy-MM-dd"];
-}
-
-- (NSString *)getSelectionDateStringCalculateDay:(NSInteger)countDay {
-    NSDate *tempDate = [NSDate dateWithTimeInterval:86400*countDay sinceDate:[self currentDate]];
-    return [self dateStringFromDate:tempDate dateFormat:@"yyyy-MM-dd"];
-}
-
-- (NSString *)getSelectionDateStringCalculateDay:(NSInteger)countDay dateFormat:(NSString *)dateFormat {
-    NSDate *tempDate = [NSDate dateWithTimeInterval:86400*countDay sinceDate:[self currentDate]];
-    return [self dateStringFromDate:tempDate dateFormat:dateFormat];
-}
-
-- (NSDate *)getSelectionDateCalculateDay:(NSInteger)countDay {
-    NSDate *tempDate = [NSDate dateWithTimeInterval:86400*countDay sinceDate:[self currentDate]];
-    return tempDate;
-}
-@end
 

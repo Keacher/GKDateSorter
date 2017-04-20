@@ -83,10 +83,4 @@
 - (BOOL)isTheSameDayWithDateSorter:(GKDateSorter *)dateSorter;
 @end
 
-@interface GKDateSorter (HBDateSorter)
 
-- (NSString *)getSelectionDateStringCurrentDay;
-- (NSString *)getSelectionDateStringCalculateDay:(NSInteger)countDay;
-- (NSString *)getSelectionDateStringCalculateDay:(NSInteger)countDay dateFormat:(NSString *)dateFormat;
-- (NSDate *)getSelectionDateCalculateDay:(NSInteger)countDay;
-@end
