@@ -270,4 +270,33 @@ static NSString *DefultDataFormat = @"yyyy/MM/dd HH:mm:ss";
 
 @end
 
+// 使用longlong防止32位机器上溢出
+// 缓存本地时间与服务器时间的时间差，以便校准时间
+static long long timeIntevalDifference = 0;
+
+@implementation GKDateSorter (ServerTime)
+
+- (void)updateServerTime:(long long)timestamp {
+    NSTimeInterval timeInteval = timestamp / 1000.0 - [[NSDate date] timeIntervalSince1970];
+    timeIntevalDifference = timeInteval;
+}
+
+
++ (NSDate*)currentTime {
+    NSDate* serverDate = [NSDate dateWithTimeIntervalSinceNow:timeIntevalDifference];
+    return serverDate;
+}
+
+// 以毫秒为单位
++ (long long)currentTimeStamp {
+    NSTimeInterval localTime = [[NSDate date] timeIntervalSince1970];
+    NSTimeInterval timeDifference = timeIntevalDifference;
+    
+    return (long long)((localTime + timeDifference) * 1000);
+}
+
+@end
+
+
+
 
