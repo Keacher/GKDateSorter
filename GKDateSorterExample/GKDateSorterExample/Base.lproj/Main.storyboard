@@ -31,6 +31,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIi-rC-Ani">
                                 <rect key="frame" x="180" y="23" width="92" height="30"/>
                                 <state key="normal" title="生成日期字符"/>
+                                <connections>
+                                    <action selector="generate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zSk-Jz-Z3Z"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入指定的解析格式：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JC-wL-rvD">
                                 <rect key="frame" x="16" y="77" width="174" height="21"/>
@@ -83,6 +86,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nK2-Rp-qhi">
                                 <rect key="frame" x="297" y="621" width="62" height="30"/>
                                 <state key="normal" title="更新结果"/>
+                                <connections>
+                                    <action selector="update:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e6m-kI-pNs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -113,6 +119,12 @@
                             <constraint firstItem="4nw-oj-B6D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="yOw-CX-BO6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="generButton" destination="wIi-rC-Ani" id="0oH-ja-fxv"/>
+                        <outlet property="inputDataTextField" destination="Siy-YX-zGJ" id="w1v-mR-HI7"/>
+                        <outlet property="inputFormatTextField" destination="B5f-Nq-pQY" id="ljL-RO-kci"/>
+                        <outlet property="resultLabel" destination="dQR-d8-cqt" id="snZ-B4-5CC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

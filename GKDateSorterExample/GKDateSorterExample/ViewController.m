@@ -13,6 +13,14 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *generButton;
+
+@property (weak, nonatomic) IBOutlet UITextField *inputFormatTextField;
+
+@property (weak, nonatomic) IBOutlet UITextField *inputDataTextField;
+
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+
 @end
 
 @implementation ViewController
@@ -34,6 +42,59 @@
     
 }
 
+- (IBAction)generate:(UIButton *)sender {
+    
+    NSDate *current = [NSDate date];
+    
+    GKDateSorter *dateSorter = [[GKDateSorter alloc] initWithDate:current];
+    
+    NSString *result = [dateSorter getDateStringWithdateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    
+//    self.resultLabel.text = result;
+    [self showResult:result];
+}
+
+
+- (IBAction)update:(UIButton *)sender {
+    
+    if ([self checkStringNull:self.inputFormatTextField.text]) {
+        [self alertNote:@"请输入要解析的日期格式"];
+    }
+    
+    if ([self checkStringNull:self.inputDataTextField.text]) {
+        [self alertNote:@"请输入要解析的数据"];
+    }
+    
+    NSString *inputFormat = self.inputFormatTextField.text;
+    NSString *inputData = self.inputDataTextField.text;
+    
+    GKDateSorter *dateSorter = [[GKDateSorter alloc] initWithDateString:inputData dateFormat:inputFormat];
+    
+    NSString *result = [dateSorter getDateStringWithdateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    
+    [self showResult:result];
+}
+
+- (void)showResult:(NSString *)result {
+    self.resultLabel.text = result;
+}
+
+- (BOOL)checkStringNull:(NSString *)string {
+    if ([string isEqualToString:@""] || string == nil) {
+        return YES;
+    }
+    return NO;
+}
+
+- (void)alertNote:(NSString *)note {
+    NSString *noteString = note;
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:noteString preferredStyle:UIAlertControllerStyleAlert];
+    
+    [self presentViewController:alertController animated:YES completion:^{
+        
+    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
