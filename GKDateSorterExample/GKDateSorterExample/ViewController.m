@@ -60,8 +60,7 @@
     if ([self checkStringNull:self.inputFormatTextField.text]) {
         [self alertNote:@"请输入要解析的日期格式"];
     }
-    
-    if ([self checkStringNull:self.inputDataTextField.text]) {
+    else if ([self checkStringNull:self.inputDataTextField.text]) {
         [self alertNote:@"请输入要解析的数据"];
     }
     
@@ -90,6 +89,11 @@
     NSString *noteString = note;
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:noteString preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [alertController addAction:action];
     
     [self presentViewController:alertController animated:YES completion:^{
         
