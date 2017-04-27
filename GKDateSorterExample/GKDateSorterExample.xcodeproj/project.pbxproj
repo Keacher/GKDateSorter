@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		76632D451E9F7BB5000294AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76632D441E9F7BB5000294AF /* main.m */; };
 		76632D481E9F7BB5000294AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76632D471E9F7BB5000294AF /* AppDelegate.m */; };
-		76632D4B1E9F7BB5000294AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76632D4A1E9F7BB5000294AF /* ViewController.m */; };
 		76632D4E1E9F7BB5000294AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76632D4C1E9F7BB5000294AF /* Main.storyboard */; };
 		76632D501E9F7BB5000294AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76632D4F1E9F7BB5000294AF /* Assets.xcassets */; };
 		76632D531E9F7BB5000294AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76632D511E9F7BB5000294AF /* LaunchScreen.storyboard */; };
 		76632D5E1E9F7BB5000294AF /* GKDateSorterExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76632D5D1E9F7BB5000294AF /* GKDateSorterExampleTests.m */; };
 		76632D6B1E9FCD88000294AF /* GKDateSorter.m in Sources */ = {isa = PBXBuildFile; fileRef = 76632D6A1E9FCD88000294AF /* GKDateSorter.m */; };
+		769816DE1EB0D77B004B3001 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769816DD1EB0D77B004B3001 /* ExampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +32,6 @@
 		76632D441E9F7BB5000294AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76632D461E9F7BB5000294AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		76632D471E9F7BB5000294AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		76632D491E9F7BB5000294AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		76632D4A1E9F7BB5000294AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		76632D4D1E9F7BB5000294AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76632D4F1E9F7BB5000294AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76632D521E9F7BB5000294AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +41,8 @@
 		76632D5F1E9F7BB5000294AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76632D691E9FCD88000294AF /* GKDateSorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDateSorter.h; sourceTree = "<group>"; };
 		76632D6A1E9FCD88000294AF /* GKDateSorter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDateSorter.m; sourceTree = "<group>"; };
+		769816DC1EB0D77B004B3001 /* GKDateSorterExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GKDateSorterExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		769816DD1EB0D77B004B3001 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,13 +87,13 @@
 				76632D681E9F7DAB000294AF /* GKDateSorter */,
 				76632D461E9F7BB5000294AF /* AppDelegate.h */,
 				76632D471E9F7BB5000294AF /* AppDelegate.m */,
-				76632D491E9F7BB5000294AF /* ViewController.h */,
-				76632D4A1E9F7BB5000294AF /* ViewController.m */,
+				769816DD1EB0D77B004B3001 /* ExampleViewController.swift */,
 				76632D4C1E9F7BB5000294AF /* Main.storyboard */,
 				76632D4F1E9F7BB5000294AF /* Assets.xcassets */,
 				76632D511E9F7BB5000294AF /* LaunchScreen.storyboard */,
 				76632D541E9F7BB5000294AF /* Info.plist */,
 				76632D431E9F7BB5000294AF /* Supporting Files */,
+				769816DC1EB0D77B004B3001 /* GKDateSorterExample-Bridging-Header.h */,
 			);
 			path = GKDateSorterExample;
 			sourceTree = "<group>";
@@ -174,6 +174,7 @@
 					76632D3F1E9F7BB5000294AF = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = G937UL7723;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					76632D581E9F7BB5000294AF = {
@@ -229,9 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				76632D6B1E9FCD88000294AF /* GKDateSorter.m in Sources */,
-				76632D4B1E9F7BB5000294AF /* ViewController.m in Sources */,
 				76632D481E9F7BB5000294AF /* AppDelegate.m in Sources */,
 				76632D451E9F7BB5000294AF /* main.m in Sources */,
+				769816DE1EB0D77B004B3001 /* ExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,11 +370,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = G937UL7723;
 				INFOPLIST_FILE = GKDateSorterExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.Keacher.GKDateSorterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GKDateSorterExample/GKDateSorterExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -381,17 +386,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = G937UL7723;
 				INFOPLIST_FILE = GKDateSorterExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.Keacher.GKDateSorterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GKDateSorterExample/GKDateSorterExample-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		76632D661E9F7BB5000294AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = G937UL7723;
 				INFOPLIST_FILE = GKDateSorterExampleTests/Info.plist;
@@ -405,6 +414,7 @@
 		76632D671E9F7BB5000294AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = G937UL7723;
 				INFOPLIST_FILE = GKDateSorterExampleTests/Info.plist;
